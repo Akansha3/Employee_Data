@@ -1,0 +1,20 @@
+class Employee():
+  EmpCount = 0
+  def __init__(self,name,salary,position):
+    self.name = name
+    self.salary = salary
+    self.position = position
+    Employee.EmpCount+=1
+  
+  def empNumber(self):
+    print("There are %d employee"%Employee.EmpCount)
+
+  def empDetails(self):
+    print("name",self.name,"salary",self.salary, "position",self.position)
+
+emp1 = Employee("John",20000,"Engineer")
+emp2 = Employee("Mark",30000,"Lead")
+emp3 = Employee("Tom",50000,"Manager")
+
+emp2.empNumber()
+emp1.empDetails()
